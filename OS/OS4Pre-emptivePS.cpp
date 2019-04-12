@@ -22,19 +22,23 @@ int main()
 {
     schedule pro[10];
     int n,i,j,pcom;
-    
+
     cout<<"Enter the number of process::";
     cin>>n;
     cout<<"Enter the Process id arrival time burst time and priority :::";
     for(i=0;i<n;i++)
     {
+        cout << "enter pid" << endl;
         cin>>pro[i].pro_id;
+        cout << "enter arival time" << endl;
         cin>>pro[i].at;
+        cout << "enter burst time" << endl;
         cin>>pro[i].bt;
         pro[i].btt=pro[i].bt;
+        cout << "enter priority"
         cin>>pro[i].pr;
     }
-    
+
     sort(pro,pro+n,compare);
     i=0;
     pcom=0;
@@ -58,7 +62,7 @@ int main()
             pro[j].ct=i+1;
             pro[j].bt--;
         }
-        
+
         i++;
         pcom=0;
         for(j=0;j<n;j++)
@@ -86,11 +90,11 @@ int main()
         total_wt = total_wt + pro[i].wt;
         total_tat = total_tat + pro[i].ta;
     }
-    
+
     cout << "\nAverage waiting time = "
     << (float)total_wt / (float)n;
     cout << "\nAverage turn around time = "
     << (float)total_tat / (float)n;
-    
+
     return 0;
 }
