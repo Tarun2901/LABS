@@ -1,0 +1,2 @@
+Second Order Mid point Circle Algorithm is an extension of Mid Point Algorithm where the same approach is used, but the second order derivatives is taken to decide the next point.
+That is instead of changing according to some x or y dependent quantity in deltaE and deltaSe, we measure its changes too, and then give it as changes in deltaE (deltaEnew - deltaEold) and deltaSE (deltaSEnew - deltaSEold).
