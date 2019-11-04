@@ -1,0 +1,58 @@
+gcc hello.c -- Compile and link -- a.out file created
+gcc -c hello.c -- Compile only  -- .o file created but it is not linked yet So not executable
+
+
+e.g.
+
+#include<stdio.h>  This only tells the compiler where printf() and scanf() are present
+				   Header files only contain the declaration
+				   Stack memory contains garbage value
+				   Heap memory assigns default value 0
+				   Memory is assigned during compilation except for dynamic allocation
+
+#include<> is only for header files
+#include<"a.c"> must not be used to include files in the same directory
+
+e.g.
+
+file filea.c :
+ int myop(int x,int y){
+   return x+y;
+ }
+
+file filea.h :
+extern int myop(int x,int y);
+
+file mainfile.c:
+#include<stdio.h>
+#include<"filea.h">
+
+int main(){
+	int result;
+	int a =10; int b=20;
+	result = myop(a,b);
+	printf("");
+	return 0;
+}
+
+gcc filea.0	// To link the filea.o with main
+
+gcc mainfile.0 filea.o -o myoutput
+
+
+Libraries:
+
+libm.a - Archive
+	   - Static
+	   - Library
+li	   
+
+
+
+
+
+
+
+
+
+
