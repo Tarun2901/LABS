@@ -48,66 +48,38 @@ extern int yydebug;
     START_OF_COMMENT = 258,
     END_OF_COMMENT = 259,
     HEADER = 260,
-    IF = 261,
-    ELSE = 262,
-    INT = 263,
-    RETURN = 264,
-    VOID = 265,
-    WHILE = 266,
-    PLUS = 267,
-    MINUS = 268,
-    MULTIPLY = 269,
-    DIVIDE = 270,
-    LESS_THAN = 271,
-    LESS_OR_EQUAL = 272,
-    GREATER_THAN = 273,
-    GREATER_OR_EQUAL = 274,
-    EQUALS = 275,
-    ASSIGNMENT = 276,
-    NOT_EQUALS = 277,
-    EOL = 278,
-    COMMA = 279,
-    LEFT_PARANTHESIS = 280,
-    RIGHT_PARANTHESIS = 281,
-    LEFT_BRACKET = 282,
-    RIGHT_BRACKET = 283,
-    LEFT_SQR_BRACKET = 284,
-    RIGHT_SQR_BRACKET = 285,
-    ID = 286,
-    NUM = 287
+    INT = 261,
+    VOID = 262,
+    PLUS = 263,
+    EQUALS = 264,
+    ASSIGNMENT = 265,
+    EOL = 266,
+    COMMA = 267,
+    LEFT_PARANTHESIS = 268,
+    RIGHT_PARANTHESIS = 269,
+    LEFT_BRACKET = 270,
+    RIGHT_BRACKET = 271,
+    ID = 272,
+    NUM = 273
   };
 #endif
 /* Tokens.  */
 #define START_OF_COMMENT 258
 #define END_OF_COMMENT 259
 #define HEADER 260
-#define IF 261
-#define ELSE 262
-#define INT 263
-#define RETURN 264
-#define VOID 265
-#define WHILE 266
-#define PLUS 267
-#define MINUS 268
-#define MULTIPLY 269
-#define DIVIDE 270
-#define LESS_THAN 271
-#define LESS_OR_EQUAL 272
-#define GREATER_THAN 273
-#define GREATER_OR_EQUAL 274
-#define EQUALS 275
-#define ASSIGNMENT 276
-#define NOT_EQUALS 277
-#define EOL 278
-#define COMMA 279
-#define LEFT_PARANTHESIS 280
-#define RIGHT_PARANTHESIS 281
-#define LEFT_BRACKET 282
-#define RIGHT_BRACKET 283
-#define LEFT_SQR_BRACKET 284
-#define RIGHT_SQR_BRACKET 285
-#define ID 286
-#define NUM 287
+#define INT 261
+#define VOID 262
+#define PLUS 263
+#define EQUALS 264
+#define ASSIGNMENT 265
+#define EOL 266
+#define COMMA 267
+#define LEFT_PARANTHESIS 268
+#define RIGHT_PARANTHESIS 269
+#define LEFT_BRACKET 270
+#define RIGHT_BRACKET 271
+#define ID 272
+#define NUM 273
 
 /* Value type.  */
 #if ! defined YYSTYPE && ! defined YYSTYPE_IS_DECLARED
